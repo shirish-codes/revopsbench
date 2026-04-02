@@ -1,0 +1,14 @@
+# Studio/SQLite — not for live servers
+database/
+db.php
+mu-plugins/sqlite-database-integration/
+
+# Backups
+ai1wm-backups/
+
+# Media uploads (sync separately or via CDN)
+uploads/
+
+# OS / logs
+.DS_Store
+*.log
