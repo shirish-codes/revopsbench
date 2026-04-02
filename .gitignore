@@ -1,0 +1,13 @@
+# Database
+database/
+db.php
+
+# Uploads (media files)
+uploads/
+
+# Backups
+ai1wm-backups/
+
+# OS / editor
+.DS_Store
+*.log

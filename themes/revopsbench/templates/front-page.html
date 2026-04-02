@@ -1,0 +1,340 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"revopsbench"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"},"style":{"spacing":{"blockGap":"0"}}} -->
+<main class="wp-block-group">
+
+<!-- =============================================
+     HERO SECTION
+     ============================================= -->
+<!-- wp:html -->
+<section class="hero-wrap">
+  <!-- Three.js 3-D wave canvas -->
+  <div id="hero-wave-canvas" class="wave-canvas-wrap"></div>
+
+  <!-- Glow orbs (sit on top of wave) -->
+  <div class="glow-orb-orange"></div>
+  <div class="glow-orb-blue"></div>
+
+  <div class="hero-inner">
+    <!-- Left: Copy -->
+    <div class="hero-left fade-up">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Elite RevOps Talent Network
+      </div>
+
+      <h1 class="hero-h1">
+        The Revenue<br>
+        Operations Architects<br>
+        <span class="gradient-text">Your Pipeline Demands</span>
+      </h1>
+
+      <p class="hero-sub">
+        Elite fractional and contract RevOps architects — deployed to optimize your revenue system, accelerate pipeline velocity, and eliminate operational drag.
+      </p>
+
+      <div class="hero-buttons">
+        <!-- Primary CTA — glowing orange pill -->
+        <a href="/hire" class="btn-primary">
+          Hire RevOps Talent
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <!-- Secondary CTA — ghost pill -->
+        <a href="#join-the-bench" class="btn-secondary">
+          Join the Bench
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Dashboard Visual -->
+    <div class="hero-visual-card fade-up delay-2">
+      <div class="dashboard-title-bar">
+        <span class="dot-r"></span>
+        <span class="dot-y"></span>
+        <span class="dot-g"></span>
+        <span class="db-label">Revenue Intelligence Dashboard</span>
+      </div>
+
+      <!-- KPI tiles -->
+      <div class="dash-top-metrics">
+        <div class="dash-kpi">
+          <div class="kpi-label">Pipeline</div>
+          <div class="kpi-value">$4.2M</div>
+          <div class="kpi-trend">↑ 34% QoQ</div>
+        </div>
+        <div class="dash-kpi">
+          <div class="kpi-label">SQL Rate</div>
+          <div class="kpi-value">18.4%</div>
+          <div class="kpi-trend">↑ 8.2pp</div>
+        </div>
+        <div class="dash-kpi">
+          <div class="kpi-label">Avg Close</div>
+          <div class="kpi-value">23d</div>
+          <div class="kpi-trend">↓ 12%</div>
+        </div>
+      </div>
+
+      <!-- Donut chart + legend -->
+      <div class="dash-mid">
+        <div class="donut-wrap">
+          <svg viewBox="0 0 100 100" width="92" height="92" style="display:block">
+            <!-- Track ring -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="11"/>
+            <!-- Closed-Won 38% — teal -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#00E6A0" stroke-width="11"
+              stroke-dasharray="88 151" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+            <!-- Negotiation 24% — cyan -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#00CFFF" stroke-width="11"
+              stroke-dasharray="55 184" stroke-dashoffset="-91" transform="rotate(-90 50 50)"/>
+            <!-- Demo Stage 22% — mid teal -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(0,184,148,0.75)" stroke-width="11"
+              stroke-dasharray="50 189" stroke-dashoffset="-149" transform="rotate(-90 50 50)"/>
+            <!-- Prospecting 16% — subtle -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="11"
+              stroke-dasharray="36 203" stroke-dashoffset="-202" transform="rotate(-90 50 50)"/>
+            <!-- Center label -->
+            <text x="50" y="47" text-anchor="middle" fill="white" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="800">73%</text>
+            <text x="50" y="58" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="'Inter',sans-serif" font-size="6" letter-spacing="0.8">WIN RATE</text>
+          </svg>
+        </div>
+        <div class="donut-legend">
+          <div class="legend-row"><span class="ldot" style="background:#00E6A0"></span><span class="lname">Closed-Won</span><span class="lpct">38%</span></div>
+          <div class="legend-row"><span class="ldot" style="background:#00CFFF"></span><span class="lname">Negotiation</span><span class="lpct">24%</span></div>
+          <div class="legend-row"><span class="ldot" style="background:rgba(0,184,148,0.75)"></span><span class="lname">Demo Stage</span><span class="lpct">22%</span></div>
+          <div class="legend-row"><span class="ldot" style="background:rgba(255,255,255,0.15)"></span><span class="lname">Prospecting</span><span class="lpct">16%</span></div>
+        </div>
+      </div>
+
+      <!-- Funnel health bars -->
+      <div class="funnel-section" style="margin-top:0">
+        <div style="font-family:var(--font-heading);font-size:0.58rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:0.65rem">Funnel Health</div>
+        <div class="funnel-label-row"><span class="funnel-lbl">MQL → SAL</span><span class="funnel-pct">74%</span></div>
+        <div class="funnel-track"><div class="funnel-fill" data-w="74%"></div></div>
+        <div class="funnel-label-row"><span class="funnel-lbl">SAL → Closed-Won</span><span class="funnel-pct">38%</span></div>
+        <div class="funnel-track" style="margin-bottom:0"><div class="funnel-fill" data-w="38%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /wp:html -->
+
+
+
+<!-- =============================================
+     CAPABILITIES SECTION
+     ============================================= -->
+<!-- wp:html -->
+<section id="capabilities" class="revops-section capabilities-bg">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-eyebrow">Capabilities</div>
+      <h2 class="section-h2">Built for the Full<br><span class="gradient-text">Revenue Stack</span></h2>
+      <p class="section-sub">Our architects bring deep technical depth across every layer of the modern go-to-market engine.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+
+      <div class="glass-card fade-up delay-1">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Lead-to-Revenue Automation</div>
+        <div class="card-body">Streamlining the journey from first touch to closed-won with seamless automation across your entire revenue funnel — eliminating manual handoffs, reducing cycle time, and ensuring no deal falls through the cracks.</div>
+      </div>
+
+      <div class="glass-card fade-up delay-2">
+        <div class="card-icon">🗄️</div>
+        <div class="card-title">Data Strategy & Hygiene</div>
+        <div class="card-body">Implementing robust orchestration for enrichment, account matching, and data integrity — so your CRM is a weapon, not a liability. We build the systems that keep your data clean, accurate, and actionable.</div>
+      </div>
+
+      <div class="glass-card fade-up delay-3">
+        <div class="card-icon">🎯</div>
+        <div class="card-title">Sales & Marketing Alignment</div>
+        <div class="card-body">Integrating your tech stack to ensure a single source of truth across all GTM departments — aligning Sales, Marketing, and CS on one unified view of the customer journey and pipeline health.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /wp:html -->
+
+
+
+<!-- =============================================
+     TECH STACK — ANIMATED TICKER
+     ============================================= -->
+<!-- wp:html -->
+<section id="tech-stack" class="revops-section tech-section-bg">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-eyebrow">Tech Stack</div>
+      <h2 class="section-h2">Specialized in the Modern<br><span class="gradient-text">B2B Growth Stack</span></h2>
+      <p class="section-sub">Our network holds deep certifications and hands-on implementation experience across the world's leading revenue tools.</p>
+    </div>
+  </div>
+
+  <!-- Ticker rows — inside max-width container -->
+  <div class="section-inner">
+
+  <!-- CRM & Core row -->
+  <div class="ticker-category fade-up">
+    <h3 style="text-align:center;font-family:var(--font-heading);font-weight:700;color:#fff;margin:0 0 1rem">CRM &amp; Core</h3>
+    <div class="ticker-container">
+      <div class="ticker-track" id="tick-crm">
+        <!-- Original set -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesforce.com" alt=""/><span>Salesforce</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=hubspot.com" alt=""/><span>HubSpot</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=microsoft.com" alt=""/><span>Microsoft Dynamics 365</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- Data & Intelligence -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zoominfo.com" alt=""/><span>ZoomInfo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=apollo.io" alt=""/><span>Apollo.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=clearbit.com" alt=""/><span>Clearbit</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=6sense.com" alt=""/><span>6sense</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- Sales Engagement -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=outreach.io" alt=""/><span>Outreach</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesloft.com" alt=""/><span>Salesloft</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=gong.io" alt=""/><span>Gong</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- Marketing Automation -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=marketo.com" alt=""/><span>Marketo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=hubspot.com" alt=""/><span>HubSpot Marketing Hub</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zapier.com" alt=""/><span>Zapier</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- Data Orchestration -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=leandata.com" alt=""/><span>LeanData</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=getcensus.com" alt=""/><span>Census</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=tray.io" alt=""/><span>Tray.io</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- DUPLICATE SET for seamless loop -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesforce.com" alt=""/><span>Salesforce</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=hubspot.com" alt=""/><span>HubSpot</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=microsoft.com" alt=""/><span>Microsoft Dynamics 365</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zoominfo.com" alt=""/><span>ZoomInfo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=apollo.io" alt=""/><span>Apollo.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=clearbit.com" alt=""/><span>Clearbit</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=6sense.com" alt=""/><span>6sense</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=outreach.io" alt=""/><span>Outreach</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesloft.com" alt=""/><span>Salesloft</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=gong.io" alt=""/><span>Gong</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=marketo.com" alt=""/><span>Marketo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=hubspot.com" alt=""/><span>HubSpot Marketing Hub</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zapier.com" alt=""/><span>Zapier</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=leandata.com" alt=""/><span>LeanData</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=getcensus.com" alt=""/><span>Census</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=tray.io" alt=""/><span>Tray.io</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row — reverse direction (right to left slower) -->
+  <div class="ticker-category fade-up delay-1" style="margin-top:1rem">
+    <h3 style="text-align:center;font-family:var(--font-heading);font-weight:700;color:#fff;margin:0 0 1rem">Data &amp; Intelligence</h3>
+    <div class="ticker-container">
+      <div class="ticker-track" style="animation-direction:reverse;animation-duration:40s">
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zoominfo.com" alt=""/><span>ZoomInfo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=apollo.io" alt=""/><span>Apollo.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=clearbit.com" alt=""/><span>Clearbit</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=6sense.com" alt=""/><span>6sense</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=outreach.io" alt=""/><span>Outreach</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesloft.com" alt=""/><span>Salesloft</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=gong.io" alt=""/><span>Gong</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=marketo.com" alt=""/><span>Marketo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=leandata.com" alt=""/><span>LeanData</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=getcensus.com" alt=""/><span>Census</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=tray.io" alt=""/><span>Tray.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zapier.com" alt=""/><span>Zapier</span></span>
+        <span class="ticker-sep">·</span>
+        <!-- Duplicate -->
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zoominfo.com" alt=""/><span>ZoomInfo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=apollo.io" alt=""/><span>Apollo.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=clearbit.com" alt=""/><span>Clearbit</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=6sense.com" alt=""/><span>6sense</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=outreach.io" alt=""/><span>Outreach</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=salesloft.com" alt=""/><span>Salesloft</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=gong.io" alt=""/><span>Gong</span></span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=marketo.com" alt=""/><span>Marketo</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=leandata.com" alt=""/><span>LeanData</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=getcensus.com" alt=""/><span>Census</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=tray.io" alt=""/><span>Tray.io</span></span>
+        <span class="ticker-item"><img src="https://www.google.com/s2/favicons?sz=64&domain=zapier.com" alt=""/><span>Zapier</span></span>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /section-inner ticker wrapper -->
+
+</section>
+<!-- /wp:html -->
+
+
+
+<!-- =============================================
+     HOW IT WORKS
+     ============================================= -->
+<!-- wp:html -->
+<section id="how-it-works" class="revops-section how-section-bg">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-eyebrow">How it Works</div>
+      <h2 class="section-h2">From Intake to Impact<br><span class="gradient-text">in 72 Hours</span></h2>
+      <p class="section-sub">We don't send resumes. We deploy architects who've already solved your exact problem.</p>
+    </div>
+
+    <div class="process-cards">
+      <div class="process-card fade-up delay-1">
+        <div class="process-num">01</div>
+        <div class="process-title">Vetted Intake</div>
+        <div class="process-body">We audit the technical depth and platform experience of every applicant before they ever touch our bench. No generalists. No fluff. Only practitioners who've shipped revenue systems at scale.</div>
+      </div>
+      <div class="process-card fade-up delay-2">
+        <div class="process-num">02</div>
+        <div class="process-title">Precision Matching</div>
+        <div class="process-body">We pair companies with talent based on their specific tech stack, growth stage, and operational gap — not by keyword or availability. Your problem determines the profile.</div>
+      </div>
+      <div class="process-card fade-up delay-3">
+        <div class="process-num">03</div>
+        <div class="process-title">Deployment</div>
+        <div class="process-body">Experts hit the ground running to optimize your revenue engine — embedded in your team, operating in your stack, and reporting against your pipeline metrics from day one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /wp:html -->
+
+
+
+<!-- =============================================
+     JOIN THE BENCH
+     ============================================= -->
+<!-- wp:html -->
+<section id="join-the-bench" class="revops-section join-section-bg">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-eyebrow">Apply Now</div>
+      <h2 class="section-h2">Join the <span class="gradient-text">Bench</span></h2>
+      <p class="section-sub">Complete your technical profile to be considered for our elite roster of RevOps professionals.</p>
+    </div>
+
+    <div class="join-card fade-up delay-1">
+
+      <iframe class="airtable-embed" src="https://airtable.com/embed/appdM242lFPzFN8Fg/pag4j09eUDTWFJnT6/form" frameborder="0" onmousewheel="" width="100%" height="1400" style="background:transparent;border:1px solid rgba(0,230,160,0.15);border-radius:12px;display:block;margin-top:1.5rem"></iframe>
+
+    </div>
+  </div>
+</section>
+<!-- /wp:html -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"revopsbench"} /-->
