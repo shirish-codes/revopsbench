@@ -1,14 +1,7 @@
-# Studio/SQLite — not for live servers
+# Studio/SQLite — breaks live MySQL servers, do not deploy
 database/
 db.php
 mu-plugins/sqlite-database-integration/
 
-# Backups
-ai1wm-backups/
-
-# Media uploads (sync separately or via CDN)
-uploads/
-
-# OS / logs
+# OS
 .DS_Store
-*.log
